@@ -1,0 +1,51 @@
+POST http://localhost:3000/users/
+Content-Type:application/json
+
+{
+    "username":"shiva",
+    "password":"shiva123"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type:application/json
+
+{
+    "username":"shiva",
+    "password":"shiva123"
+}
+
+###
+GET http://localhost:3000/fruits
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjcwOTA3ODUwfQ.kitJ-RO8eY-VBLPFnsB5iGwJA_xeeNJk1UPqoE54q7A
+
+###
+
+GET http://localhost:3000/fruits/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjcwOTA3ODUwfQ.kitJ-RO8eY-VBLPFnsB5iGwJA_xeeNJk1UPqoE54q7A
+###
+
+POST  http://localhost:3000/fruits
+Content-type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjcwOTA3ODUwfQ.kitJ-RO8eY-VBLPFnsB5iGwJA_xeeNJk1UPqoE54q7A
+
+{
+    "fruitName":"grapes"
+}
+###
+
+PUT  http://localhost:3000/fruits/5
+Content-type:application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjcwOTA3ODUwfQ.kitJ-RO8eY-VBLPFnsB5iGwJA_xeeNJk1UPqoE54q7A
+
+{
+    "fruitName":"jama"
+}
+
+###
+
+DELETE  http://localhost:3000/fruits/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoaXZhIiwiaWF0IjoxNjcwOTA3ODUwfQ.kitJ-RO8eY-VBLPFnsB5iGwJA_xeeNJk1UPqoE54q7A
+
+###
+
